@@ -10,23 +10,24 @@ body {
     background-position: center;
 }
 
-.maintext {
+.initaltext {
     text-align: center;
     color:aliceblue;
     vertical-align:bottom;
-    transform: translate(0%, 100%);
+    transform: translate(0%, 0%);
 }
 
 .subtitle {
     position: relative;
     text-align: center;
     color: white;
-    transform: translate(0%, 100%);
+    top:10px;
+    transform: translate(0%, 50%);
 }
 
 .subtitle-text{
     text-align: center;
-    color: #166c6c;
+    color: #404040;
     vertical-align:bottom;
     font-family: beatblock;
     font-size: 80px;
@@ -38,6 +39,23 @@ body {
     image-rendering: pixelated;
 }
 
+.subtitleimage{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width:1000px;
+  image-rendering: pixelated;
+}
+
+.maintext {
+    text-align: center;
+    color:aliceblue;
+    vertical-align:top;
+    position: top;
+    transform: translate(0%, 85%);
+}
+
 h2{
     font-size: 40px;
 }
@@ -45,6 +63,21 @@ h2{
 p{
     font-size: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+h2{
+  color: white;
+  text-shadow:
+  -1px -1px 0 #000,
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;  
 }
 
 .nav {
@@ -69,4 +102,9 @@ p{
 .nav a.active {
   background-color: darkred;
   color: white;
+}
+
+.wavelength {
+    width: 100%;
+    transform: translate(0, 70%)
 }
