@@ -1,0 +1,23 @@
+// Source - https://stackoverflow.com/a
+// Posted by Bharata
+// Retrieved 2025-12-13, License - CC BY-SA 4.0
+
+<?php
+
+// This PHP script must be in "SOME_PATH/jsonFile/index.php"
+
+$file = '/pixelartrequests/requests.txt';
+
+if($_SERVER['REQUEST_METHOD'] === 'POST')
+// or if(!empty($_POST))
+{
+    file_put_contents($file, $_POST["jsonTxt"]);
+    //may be some error handeling if you want
+}
+else if($_SERVER['REQUEST_METHOD'] === 'GET')
+// or else if(!empty($_GET))
+{
+    echo file_get_contents($file);
+    //may be some error handeling if you want
+}
+?>
