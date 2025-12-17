@@ -143,13 +143,10 @@ a{
     width: 500px;
   }
   .subtitle{
-    transform: translate(0%, 150%)
+    transform: translate(0%, 140%)
   }
   .maintext{
     transform: translate(0%, 45%);
-  }
-  .meinsuit{
-    width: 66px;
   }
   #wavelength{
     transform: translate(0, 240px)
