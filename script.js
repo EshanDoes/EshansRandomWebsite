@@ -1,17 +1,21 @@
-let meinsuitRotation = document.getElementById("meinsuit").style.rotate
+// Delta Time Source - https://stackoverflow.com/questions/13996267/loop-forever-and-provide-delta-time
+// Posted by Rikonator, modified by community. See post 'Timeline' for change history
+// Retrieved 2025-12-17, License - CC BY-SA 3.0
 
-// Code taken from https://stackoverflow.com/questions/13996267/loop-forever-and-provide-delta-time
 var lastUpdate = Date.now();
+var dt = 0;
+var milliseconds = 0;
 var myInterval = setInterval(tick, 0);
 
 function tick() {
     var now = Date.now();
-    var dt = now - lastUpdate;
+    dt += now - lastUpdate;
     lastUpdate = now;
 
-    update(dt);
-    render(dt);
+    // update(dt);
+    // render(dt);
 
-    meinsuitRotation = (360 * dt)*(Math.PI/180);
-    print(meinsuitRotation);
-};
+    document.getElementById("imagesofmeinsuit").style.top = 15-(Math.sin(dt/500.0)*2.5) + "%";
+    console.log(dt);
+    console.log(document.getElementById("imagesofmeinsuit").style.top)
+}

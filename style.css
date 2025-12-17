@@ -5,8 +5,9 @@
 
 body {
   background-image: url('/background.jpg');
-  background-size: 100%;
+  background-size: 50%;
   background-position: center;
+  background-attachment: fixed;
   text-align: center;
 }
 
@@ -45,7 +46,7 @@ p{
   position: relative;
   color: white;
   top:10px;
-  transform: translate(0%, 65%);
+  transform: translate(0%, 50%);
   text-align: center;
 }
 
@@ -139,9 +140,13 @@ a{
   width: 120px;
   transform: translate(0, 15%);
   position: fixed;
-  top: 10%
 }
 
 .socialsButtons {
   overflow: hidden;
+}
+
+#imagesofmeinsuit{
+  position: fixed;
+  top: 15%;
 }
