@@ -4,49 +4,73 @@
 }
 
 body {
-    background-image: url('/background.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
+  background-image: url('/background.jpg');
+  background-size: 100%;
+  background-position: center;
+  text-align: center;
+}
+
+p{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-shadow:
+  -1px -1px 0 #000,
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;
+  color:aliceblue;
+  font-size: 24px;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 .initaltext {
-    text-align: center;
-    color:aliceblue;
-    vertical-align:bottom;
-    transform: translate(0%, 0%);
+  color:aliceblue;
+  vertical-align:bottom;
+  transform: translate(0%, 0%);
+  text-align: center;
+}
+
+.maintext {
+  vertical-align:top;
+  position: top;
+  transform: translate(0%, 45%);
+}
+
+.smalltext {
+  font-size: 16px;
+  color:slategray;
 }
 
 .subtitle {
-    position: relative;
-    text-align: center;
-    color: white;
-    top:10px;
-    transform: translate(0%, 70%);
+  position: relative;
+  color: white;
+  top:10px;
+  transform: translate(0%, 65%);
+  text-align: center;
 }
 
 .subtitle-text{
-    text-align: center;
-    color: #404040;
-    vertical-align:bottom;
-    font-family: beatblock;
-    font-size: 80px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -95%);
-    text-rendering: pixelated;
-    image-rendering: pixelated;
+  color: #404040;
+  vertical-align:bottom;
+  font-family: beatblock;
+  font-size: 80px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -95%);
+  text-rendering: pixelated;
+  image-rendering: pixelated;
+  text-align: center;
 }
 
 .subtitleimage{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
   width:1000px;
   content: src("/Window_Header.png");
   image-rendering: pixelated;
+  text-align: center;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -57,39 +81,22 @@ body {
   .subtitle{
     transform: translate(0%, 100%)
   }
-}
-
-.maintext {
-    text-align: center;
-    color:aliceblue;
-    vertical-align:top;
-    position: top;
-    transform: translate(0%, 65%);
-    font-size: 24px;
+  .maintext{
+    transform: translate(0%, 45%);
+  }
+  .meinsuit{
+    width: 66px;
+  }
 }
 
 h2{
-    font-size: 40px;
-}
-
-p{
-    font-size: 20px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: white;
-    text-shadow:
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;
-}
-
-h2{
-  color: white;
+  font-size: 40px;
+  text-align: center;
   text-shadow:
   -1px -1px 0 #000,
   1px -1px 0 #000,
   -1px 1px 0 #000,
-  1px 1px 0 #000;  
+  1px 1px 0 #000; 
 }
 
 .nav {
@@ -103,7 +110,6 @@ h2{
 .nav a {
   float: middle;
   color: #f2f2f2;
-  text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 16px;
@@ -120,20 +126,22 @@ h2{
 }
 
 #wavelength {
-    width: 100%;
-    transform: translate(0, 70%)
+  width: 60%;
+  transform: translate(0, 75%);
+  text-align: center;
 }
 
 a{
   color:aqua;
 }
 
-#meinsuit {
-    width: 20%;
-    transform: translate(0, 15%);
-    text-align: center;
+.meinsuit {
+  width: 120px;
+  transform: translate(0, 15%);
+  position: fixed;
+  top: 10%
 }
 
-body{
-  text-align: center;
+.socialsButtons {
+  overflow: hidden;
 }
