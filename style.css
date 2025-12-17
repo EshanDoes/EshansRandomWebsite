@@ -8,6 +8,7 @@ body {
   background-size: 50%;
   background-position: center;
   background-attachment: fixed;
+  background-color: black;
   text-align: center;
 }
 
@@ -34,7 +35,7 @@ p{
 .maintext {
   vertical-align:top;
   position: top;
-  transform: translate(0%, 45%);
+  transform: translate(0%, 50px);
 }
 
 .smalltext {
@@ -62,6 +63,7 @@ p{
   text-rendering: pixelated;
   image-rendering: pixelated;
   text-align: center;
+  overflow: hidden;
 }
 
 .subtitleimage{
@@ -72,22 +74,6 @@ p{
   content: src("/Window_Header.png");
   image-rendering: pixelated;
   text-align: center;
-}
-
-@media only screen and (max-width: 1000px) {
-  .subtitleimage{
-    content: url("/Window_Header_Small.png");
-    width: 500px;
-  }
-  .subtitle{
-    transform: translate(0%, 100%)
-  }
-  .maintext{
-    transform: translate(0%, 45%);
-  }
-  .meinsuit{
-    width: 66px;
-  }
 }
 
 h2{
@@ -128,7 +114,7 @@ h2{
 
 #wavelength {
   width: 60%;
-  transform: translate(0, 75%);
+  transform: translate(0, 120px);
   text-align: center;
 }
 
@@ -149,4 +135,27 @@ a{
 #imagesofmeinsuit{
   position: fixed;
   top: 15%;
+}
+
+@media only screen and (max-width: 1000px) {
+  .subtitleimage{
+    content: url("/Window_Header_Small.png");
+    width: 500px;
+  }
+  .subtitle{
+    transform: translate(0%, 180%)
+  }
+  .maintext{
+    transform: translate(0%, 45%);
+  }
+  .meinsuit{
+    width: 66px;
+  }
+  #wavelength{
+    transform: translate(0, 240px)
+  }
+  p{
+    font-size: 32px;
+    transform: translate(0%, 60px);
+  }
 }
