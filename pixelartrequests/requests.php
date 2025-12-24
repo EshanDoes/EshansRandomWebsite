@@ -6,18 +6,20 @@
 
 // This PHP script must be in "SOME_PATH/jsonFile/index.php"
 
-$file = '/pixelartrequests/requests.txt';
+$file = '/pixelartrequests/requests.json';
 
-if($_SERVER['REQUEST_METHOD'] === 'POST')
+if($_SERVER['REQUEST_METHOD'] === 'PUT')
 // or if(!empty($_POST))
 {
     file_put_contents($file, $_POST["jsonTxt"]);
+    console.log("File updated");
     //may be some error handeling if you want
 }
 else if($_SERVER['REQUEST_METHOD'] === 'GET')
 // or else if(!empty($_GET))
 {
     echo file_get_contents($file);
+    console.log("File read");
     //may be some error handeling if you want
 }
 ?>

@@ -15,7 +15,7 @@ function tick() {
     // update(dt);
     // render(dt);
 
-    document.getElementById("imagesofmeinsuit").style.top = 15-(Math.sin(dt/500.0)*2.5) + "%";
+    document.getElementById("imagesofmeinsuit").style.top = 25-(Math.sin(dt/500.0)*2.5) + "%";
     console.log(dt);
     console.log(document.getElementById("imagesofmeinsuit").style.top)
 }

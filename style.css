@@ -12,6 +12,17 @@ body {
   text-align: center;
 }
 
+#readabilityGradient {
+  position: fixed;
+  text-align: center;
+  width: 95%;
+  background-image: linear-gradient(to right, #00000000, #00000088 10%, #00000088 90%, #00000000);
+  height: 100%;
+  left: 5%;
+  top: 0%;
+  z-index: -1;
+}
+
 p{
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   text-shadow:
@@ -49,6 +60,7 @@ p{
   top:10px;
   transform: translate(0%, 50%);
   text-align: center;
+  height: 100px;
 }
 
 .subtitle-text{
@@ -90,16 +102,23 @@ h2{
   background-color: slategray;
   overflow: hidden;
   width: 100%;
-  height: 125%;
-  position: left;
+  height: 20px;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  z-index: 1;
+  align-items: center;
+  align-self: center;
 }
 
 .nav a {
+  position: relative;
   float: middle;
   color: #f2f2f2;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 16px;
+  vertical-align: middle;
 }
 
 .nav a:hover {
@@ -110,6 +129,15 @@ h2{
 .nav a.active {
   background-color: darkred;
   color: white;
+}
+
+pagering-link{
+  position: absolute;
+  text-align: right;
+  vertical-align: middle;
+  float: right;
+  right: 1%;
+  align-self: center;
 }
 
 #wavelength {
@@ -124,17 +152,24 @@ a{
 
 .meinsuit {
   width: 120px;
-  transform: translate(0, 15%);
   position: fixed;
 }
 
 .socialsButtons {
   overflow: hidden;
+  position: relative;
+  top: 160px;
+  height: 88px;
+}
+
+#buttoncredit {
+  position: relative;
+  top: 100px;
 }
 
 #imagesofmeinsuit{
   position: fixed;
-  top: 15%;
+  top: 25%;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -154,5 +189,9 @@ a{
   p{
     font-size: 32px;
     transform: translate(0%, 60px);
+  }
+  .nav {
+    height: 40px;
+    font-size: 32px;
   }
 }
