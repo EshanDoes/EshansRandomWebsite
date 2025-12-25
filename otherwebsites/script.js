@@ -3,8 +3,15 @@
 // Define the API URL
 const apiUrl = 'https://pagering.gideon.sh/api/v1/members';
 
+const requestOptions = {
+    method: 'GET',
+    headers: {
+        'Access-Control-Allow-Origin': 'https://eshandoes.vercel.app'
+}
+};
+
 // Make a GET request
-fetch(apiUrl)
+fetch(apiUrl, requestOptions)
   .then(response => {
     if (!response.ok) {
       throw new Error('Network response was not ok');
