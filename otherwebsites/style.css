@@ -1,14 +1,14 @@
-#window{
-  background-color: #d4d0c8;
-  image-rendering: pixelated;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  width: 90%;
-  height: 100px;
-  transform: translate(-50%, -50%);
-  border: 25px solid transparent;
+#buttoncredit{
+  top: 140px;
+}
+
+.miniButtons{
+  border: 50px solid transparent;
   border-image: url("/windowResizeable.png") 25 25 25 round;
-  z-index: 1;
-  opacity: 0;
+  background-color: #d4d0c8;
+}
+
+.miniButtons a{
+  position: relative;
+  top: 25px;
 }

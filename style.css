@@ -156,17 +156,18 @@ a{
   position: fixed;
 }
 
-.socialsButtons {
-  overflow: hidden;
+.miniButtons {
   position: relative;
   top: 160px;
   height: 88px;
   image-rendering: pixelated;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 #buttoncredit {
   position: relative;
-  top: 100px;
+  top: 120px;
 }
 
 #imagesofmeinsuit{
