@@ -135,12 +135,10 @@ h2{
 }
 
 pagering-link{
-  position: absolute;
-  text-align: right;
+  position: relative;
   vertical-align: middle;
-  float: right;
-  right: 1%;
   align-self: center;
+  color: white;
 }
 
 #wavelength {
@@ -300,9 +298,7 @@ a{
 
 #glitchCatTitle{
   font-family: beatblock;
-  font-size: 80px;
-  position: relative;
-  top: 100%;
+  font-size: 112px;
 }
 
 #windowBottomButton{
@@ -312,11 +308,19 @@ a{
 
 .inspirationList{
   position: relative;
-  top: 100px;
-  overflow: hidden;
+  top: 150px;
+  overflow: visible;
   justify-content: space-around;
   justify-items: space-around;
   justify-self: space-around;
+  background-color: #d4d0c8;
+  width: 80%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  height: 30%;
+  right: 0%;
+  border: 50px solid transparent;
+  border-image: url("/windowResizeable.png") 25 25 25 round;
 }
 
 .inspirations img{
@@ -336,16 +340,7 @@ a{
 
 .inspirations{
   position: relative;
-  top: 50px
-}
-
-.inspirationList div{
-  background-color: #d4d0c8;
-  width: 70%;
-  height: 30%;
-  left: 15%;
-  border: 50px solid transparent;
-  border-image: url("/windowResizeable.png") 25 25 25 round;
+  top: 25px;
 }
 
 @media only screen and (max-width: 1000px) {
