@@ -6,7 +6,7 @@ const apiUrl = 'https://pagering.gideon.sh/api/v1/members';
 const requestOptions = {
     method: 'GET',
     headers: {
-        'Access-Control-Allow-Origin': 'https://eshandoes.vercel.app'
+        'Access-Control-Allow-Origin': 'https://pagering.gideon.sh'
 }
 };
 

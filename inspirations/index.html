@@ -3,7 +3,7 @@
 <head>
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="style.css">
-    <script src="/inspirations/script.js"></script>
+    <script src="/popupWindow.js"></script>
 
     <title>Eshan's Random Site</title>
     <link rel="icon" href="/siteicon.png">
@@ -16,16 +16,25 @@
         <pagering-link></pagering-link>
     </div>
 
+    <div id="windowBack" onclick="closeBox()"></div>
     <div id="window">
-        <button onclick="closeBox()" id="closeButton"></button>
-        <div id="windowContent">
+        <img onclick="closeBox()" id="closeButton" src="/retroWindowsButtons/Xbutton.png"></button>
+        <div id="windowGradient"></div>
+        <div id="windowContent" class="windowContent">
             <p>Test</p>
         </div>
     </div>
 </head>
 
 <body>
-    <p class="maintext">Still being worked on! Maybe check back later?</p>
+    <div id="readabilityGradient"></div>
+    <p class="maintext">Welcome to the inspirations tab! This is just me talking about stuff and people that inspired me to create things, mostly video games. I might add more to it if I ever find an artist or a piece of media that's extremely good, but for now this is it.</p>
 
-    <!--<button onclick="openBox()">Open</button>-->
+    <div class="inspirationList">
+        <div class="inspirations">
+        <img src="beatblock.png" onclick="openBox(0)">
+        <img src="undertaleYellow.png" onclick="openBox(1)">
+        <img src="https://i1.sndcdn.com/artworks-vPtsV6Q5Z9OxbsPl-8C6A2A-original.jpg" onclick="openBox(3)">
+        </div>
+    </div>
 </body>
