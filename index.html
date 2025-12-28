@@ -14,6 +14,20 @@
         <script src="https://pagering.gideon.sh/embed.js" defer></script>
     </div>
 
+    <div id="windowBack" onclick="closeBox()"></div>
+    <div id="window">
+        <img onclick="closeBox()" id="closeButton" src="/retroWindowsButtons/Xbutton.png"></button>
+        <p id="windowText">beatblock</p>
+        <div id="windowGradient"></div>
+        <div id="windowContent" class="windowContent">
+            <p>Test</p>
+        </div>
+        <iframe id="windowSite" class="windowContent" frameboarder=0 src=""></iframe>
+    </div>
+    <script src="/popupWindow.js"></script>
+
+    <img src="/campfire-icon.svg" id="campfireButton" onclick="openWebsite('https://campfire.hackclub.com/', 'hack club campfire')">
+
     <div id="readabilityGradient"></div>
 </head>
 
@@ -27,16 +41,16 @@
     <p class="initaltext">Hello, and welcome to my website! This is just a place where I talk about myself, and maybe show what I'm up to. Speaking of which, why don't I introduce myself?</p>
 
     <div class="subtitle">
-        <img src="/main-images/Window_Header.png" class="subtitleimage">
-        <h1 class="subtitle-text">WHO AM I?</h1>
+        <img src="/main-images/Window_Header.png">
+        <h1>WHO AM I?</h1>
     </div>
 
     <p class="maintext">My name is Eshan, although online I'm known as Eshan Does, and I'm a 14 year old who's managed to do a lot. From moderating Discord servers, to coding this very website, I usually like to try a lot of different things and see what I like, what I'm good at, and what doesn't fit either of those.</p>
     <p class="maintext">I like playing video games, as well as coding in general, and I'm also pretty good at pixel art. I do also have a slight bit of experience in music as well, but don't expect me to make anything good on the spot. There's a lot of other stuff I do sometimes, but that's the main skills I've got. Speaking of my skills, though...</p>
 
     <div class="subtitle">
-        <img src="/main-images/Window_Header.png" class="subtitleimage">
-        <h1 class="subtitle-text">CODING</h1>
+        <img src="/main-images/Window_Header.png">
+        <h1>CODING</h1>
     </div>
 
     <p class="maintext">I feel like the thing I've been doing the most is coding. When I was around 6 I started with Scratch, and I definitely had potential. At 9, I immediately tried to jump into making games with Unity... before forgetting a semicolon and giving up until I became 11 and tried again. Once I did that, I've been learning a lot more about game development and coding in general. In fact, I recently put out a simple test project to see what I could do in Godot! It's a simple break breaker game with a little bit of juice added to it, and you can check it out below.</p>
@@ -45,15 +59,15 @@
     <p class="maintext">‎</p>
 
     <div class="subtitle">
-        <img src="/main-images/Window_Header.png" class="subtitleimage">
-        <h1 class="subtitle-text">PIXEL ART</h1>
+        <img src="/main-images/Window_Header.png">
+        <h1>PIXEL ART</h1>
     </div>
 
     <p class="maintext">As you can probably tell, I'm a pretty big fan of pixel art. The subtitles themselves are put inside a Windows 98 window! I've been making pixel art for quite a while, and even though my portfolio isn't big, I've still made a decent selection of pixel art. If you want examples of what I've made, I have uploaded a bit of pixel art into my <a href="https://artfight.net/~EshanDoes">Art Fight</a> profile when it happened during the summer. Feel free to follow if you'll be participating for 2026!</p>
 
     <div class="subtitle">
-        <img src="/main-images/Window_Header.png" class="subtitleimage">
-        <h1 class="subtitle-text">MUSIC</h1>
+        <img src="/main-images/Window_Header.png">
+        <h1>MUSIC</h1>
     </div>
 
     <p class="maintext">One thing some people don't know about me is that I've been practicing music recently! There's not much I post, just the occasional remix and song, but behind I'm working on a few songs occasionally. You can find the few songs that I have uploaded as well as some other stuff on my <a href="https://www.youtube.com/@eshandoes">YouTube channel</a> (some of them are a little old though and I'm still trying to figure it out)</p>
@@ -68,9 +82,9 @@
         <a href="https://bsky.app/profile/eshandoes.bsky.social">
             <img src="/88x31buttons/bluesky.png" alt="BlueSky" title="BlueSky Account (inactive)" />
         </a>
-        <a href="https://eshandoes.vercel.app/l">
-            <img src="/88x31buttons/personal.png" alt="Personal Site" title="The site you're on!" />
+        <a onclick="openWebsite('/index.html', 'Eshan\'s Random Site')">
+            <img src="/88x31buttons/personal.png" alt="Personal Site" title="Visit my website on my website!" />
         </a>
     </div>
-    <p class="smalltext" id="buttoncredit">88x31 button code by <a href="https://bomberfish.ca/" class="smalltext">Bomberfish</a>. ● <pagering-link></pagering-link></p>
+    <p class="smalltext" id="buttoncredit">88x31 button code by <a href="https://bomberfish.ca/" class="smalltext">Bomberfish</a>. ● <pagering-link theme="dark"></pagering-link></p>
 </body>

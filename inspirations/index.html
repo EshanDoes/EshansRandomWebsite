@@ -2,7 +2,6 @@
 
 <head>
     <link rel="stylesheet" href="/style.css">
-    <script src="/popupWindow.js"></script>
 
     <title>Eshan's Random Site</title>
     <link rel="icon" href="/siteicon.png">
@@ -16,12 +15,18 @@
     <div id="windowBack" onclick="closeBox()"></div>
     <div id="window">
         <img onclick="closeBox()" id="closeButton" src="/retroWindowsButtons/Xbutton.png"></button>
+        <p id="windowText">beatblock</p>
         <div id="windowGradient"></div>
         <div id="windowContent" class="windowContent">
             <p>Test</p>
         </div>
+        <iframe id="windowSite" class="windowContent" frameboarder=0 src=""></iframe>
     </div>
+    <script src="/popupWindow.js"></script>
+
     <div id="readabilityGradient"></div>
+
+    <img src="/campfire-icon.svg" id="campfireButton" onclick="openWebsite('https://campfire.hackclub.com/', 'hack club campfire')">
 </head>
 
 <body>
@@ -29,9 +34,9 @@
 
     <div class="inspirationList">
         <div class="inspirations">
-        <img src="/inspirations/beatblock.png" onclick="openBox(0)">
-        <img src="/inspirations/undertaleYellow.png" onclick="openBox(1)">
-        <img src="https://i1.sndcdn.com/artworks-vPtsV6Q5Z9OxbsPl-8C6A2A-original.jpg" onclick="openBox(3)">
+        <img src="/inspirations/images/beatblock.png" onclick="openBox(0, 'beatblock.html')">
+        <img src="/inspirations/images/undertaleYellow.png" onclick="openBox(1, 'undertaleYellow.html')">
+        <img src="https://i1.sndcdn.com/artworks-vPtsV6Q5Z9OxbsPl-8C6A2A-original.jpg" onclick="openBox(3, 'glitchCat.html')">
         </div>
     </div>
 </body>

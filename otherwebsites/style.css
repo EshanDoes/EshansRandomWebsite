@@ -1,7 +1,3 @@
-#buttoncredit{
-  top: 140px;
-}
-
 .miniButtons{
   border: 50px solid transparent;
   border-image: url("/windowResizeable.png") 25 25 25 round;

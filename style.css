@@ -1,6 +1,16 @@
 @font-face {
-  font-family: beatblock;
+  font-family: DD;
   src: url('/DigitalDisco.ttf');
+}
+
+@font-face{
+  font-family: DD-thin;
+  src: url('/DigitalDisco-Thin.ttf');
+}
+
+@font-face{
+  font-family: retroWindows;
+  src: url("/M_8pt.ttf");
 }
 
 body {
@@ -39,7 +49,9 @@ p{
 .initaltext {
   color:aliceblue;
   vertical-align:bottom;
-  transform: translate(0%, 0%);
+  position: relative;
+  transform: translate(0, 0);
+  top: 16px;
   text-align: center;
 }
 
@@ -64,10 +76,10 @@ p{
   image-rendering: pixelated;
 }
 
-.subtitle-text{
+.subtitle h1{
   color: #404040;
   vertical-align:bottom;
-  font-family: beatblock;
+  font-family: DD;
   font-size: 80px;
   position: absolute;
   top: 50%;
@@ -79,7 +91,7 @@ p{
   overflow: hidden;
 }
 
-.subtitleimage{
+.subtitle img{
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -159,7 +171,7 @@ a{
 .miniButtons {
   position: relative;
   top: 160px;
-  height: 88px;
+  height: fit-content;
   image-rendering: pixelated;
   margin-left: 15%;
   margin-right: 15%;
@@ -167,7 +179,7 @@ a{
 
 #buttoncredit {
   position: relative;
-  top: 120px;
+  top: 140px;
 }
 
 #imagesofmeinsuit{
@@ -192,14 +204,17 @@ a{
 }
 
 #windowContent{
+  align-content: center;
+  justify-content: center;
+  overflow-y: auto;
+}
+
+.windowContent{
   position: fixed;
   top: 0%;
   left: 0%;
   width: 100%;
   height: 100%;
-  align-content: center;
-  justify-content: center;
-  overflow-y: auto;
 }
 
 #windowGradient{
@@ -226,7 +241,7 @@ a{
 
 /* Scrollbar styling for inspiration window (man that's a lot) */
 
-#windowContent::-webkit-scrollbar{
+.windowContent::-webkit-scrollbar{
   position: absolute;
   height: 100%;
   width: 36px;
@@ -236,36 +251,47 @@ a{
   background-size: 200%;
 }
 
-#windowContent::-webkit-scrollbar-thumb {
+.windowContent::-webkit-scrollbar-thumb {
   background-color: #d4d0c8;
   border: 12px solid transparent;
   border-image: url("/retroWindowsButtons/button.png") 3 3 3 round;
 }
 
-#windowContent::-webkit-scrollbar-thumb:hover {
+.windowContent::-webkit-scrollbar-thumb:hover {
   border-image: url("/retroWindowsButtons/button-focus.png") 3 3 3 round;
 }
 
-#windowContent::-webkit-scrollbar-button{
+.windowContent::-webkit-scrollbar-button{
   width: 36px;
   height: 36px;
   background-size: 36px;
 }
 
-#windowContent::-webkit-scrollbar-button:increment{
+.windowContent::-webkit-scrollbar-button:increment{
   background-image: url("/retroWindowsButtons/downbutton.png");
 }
 
-#windowContent::-webkit-scrollbar-button:decrement{
+.windowContent::-webkit-scrollbar-button:decrement{
   background-image: url("/retroWindowsButtons/upbutton.png");
 }
 
-#windowContent::-webkit-scrollbar-button:increment:hover{
+.windowContent::-webkit-scrollbar-button:increment:hover{
   background-image: url("/retroWindowsButtons/downbutton-focus.png");
 }
 
-#windowContent::-webkit-scrollbar-button:decrement:hover{
+.windowContent::-webkit-scrollbar-button:decrement:hover{
   background-image: url("/retroWindowsButtons/upbutton-focus.png");
+}
+
+#windowText{
+  position: fixed;
+  text-align: left;
+  font-size: 36px;
+  top: -40px;
+  left: -36px;
+  font-family: DD;
+  image-rendering: pixelated;
+  margin: 0%;
 }
 
 #closeButton{
@@ -298,7 +324,7 @@ a{
 }
 
 #glitchCatTitle{
-  font-family: beatblock;
+  font-family: DD;
   font-size: 112px;
 }
 
@@ -344,13 +370,40 @@ a{
   top: 25px;
 }
 
+#campfireButton{
+  position: fixed;
+  bottom: 1%;
+  right: 1%;
+  width: 7%;
+  height: auto;
+  transition: 0.2s ease-out;
+  filter:
+  drop-shadow(0 0 0 #ffffff00) 
+  drop-shadow(0 0 0 #ffffff00)
+  drop-shadow(0 0 0 #ffffff00) 
+  drop-shadow(0 0 0 #ffffff00);
+
+}
+
+#campfireButton:hover{
+  width: 8%;
+  border-width: 4px;
+  bottom: 2%;
+  right: 2%;
+  filter:
+  drop-shadow(3px 0 0 white) 
+  drop-shadow(0 3px 0 white)
+  drop-shadow(-3px 0 0 white) 
+  drop-shadow(0 -3px 0 white);
+}
+
 @media only screen and (max-width: 1000px) {
-  .subtitleimage{
+  .subtitle img{
     content: url("/main-images/Window_Header_Small.png");
     width: 500px;
   }
   .subtitle{
-    transform: translate(0%, 140%)
+    transform: translate(0%, 150%);
   }
   .maintext{
     transform: translate(0%, 45%);
@@ -365,5 +418,21 @@ a{
   .nav {
     height: 40px;
     font-size: 32px;
+  }
+  #buttonCredit{
+    top: 120px;
+  }
+  #windowText{
+    top: -100px;
+  }
+  #campfireButton{
+    width: 10%;
+  }
+  #campfireButton:hover{
+    width: 12%;
+  }
+  .miniButtons img{
+    width: 176px;
+    height: 62px;
   }
 }
