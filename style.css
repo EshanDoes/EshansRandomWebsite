@@ -175,6 +175,11 @@ a{
   image-rendering: pixelated;
   margin-left: 15%;
   margin-right: 15%;
+  pointer-events: all;
+}
+
+.miniButtons img:hover {
+  cursor: pointer;
 }
 
 #buttoncredit {
@@ -307,6 +312,7 @@ a{
 
 #closeButton:hover{
   content: url("/retroWindowsButtons/Xbutton-focus.png");
+  cursor: pointer;
 }
 
 #beatblockLogo{
@@ -363,6 +369,21 @@ a{
 
 .inspirations img:hover{
   border-image: url("/container.png") 2 2 2 round;
+  cursor: pointer;
+}
+
+#searchButton{
+  position: relative;
+  image-rendering: pixelated;
+  width: 20%;
+  height: auto;
+  top: 100px;
+  content: url("/retroWindowsButtons/searchbutton.png");
+}
+
+#searchButton:hover{
+  content: url("/retroWindowsButtons/searchbutton-focus.png");
+  cursor: pointer;
 }
 
 .inspirations{
@@ -395,6 +416,7 @@ a{
   drop-shadow(0 3px 0 white)
   drop-shadow(-3px 0 0 white) 
   drop-shadow(0 -3px 0 white);
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 1000px) {

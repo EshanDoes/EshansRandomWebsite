@@ -2,8 +2,6 @@
 
 <head>
     <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="/otherwebsites/style.css">
-    <script src="/otherwebsites/script.js"></script>
 
     <title>Eshan's Random Site</title>
     <link rel="icon" href="/siteicon.png">
@@ -11,7 +9,7 @@
     <div class="nav">
         <a href="/">Home</a>
         <a href="/inspirations">Inspirations</a>
-        <a class="active" href="/otherwebsites">Other Websites</a>
+        <a href="/otherwebsites">Other Websites</a>
     </div>
 
     <div id="windowBack" onclick="closeBox()"></div>
@@ -26,16 +24,13 @@
     </div>
     <script src="/popupWindow.js"></script>
 
-    <div id="readabilityGradient"></div>
-
     <img src="/campfire-icon.svg" id="campfireButton" onclick="openWebsite('https://campfire.hackclub.com/', 'hack club campfire')">
+
+    <div id="readabilityGradient"></div>
 </head>
 
-<script src="https://pagering.gideon.sh/embed.js" defer></script>
-
 <body>
-    <p class="maintext">This is a collection of all the sites in the Page Ring associated with Hack Club, a nonprofit dedicated to helping teens find their passion in tech!</p>
+    <p class="maintext">Through the power of iframes, you can now browse the web directly on my website! Just click on the button below, and you'll be sent straight to Google, where you'll be able to search anything up! Later on I'll add a way for you to type a URL and get sent there directly.</p>
 
-    <div class="miniButtons" id="miniButtons"></div>
-    <p class="smalltext" id="buttoncredit">88x31 button code by <a href="https://bomberfish.ca/" class="smalltext">Bomberfish</a>. ● <pagering-link theme="dark"></pagering-link></p>
+    <img id="searchButton" src="/retroWindowsButtons/searchbutton.png" onclick="openWebsite('https://www.google.com/', 'the web')">
 </body>

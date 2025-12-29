@@ -22,7 +22,7 @@ fetch(apiUrl, requestOptions)
     for(let i = 0; i < data.length; i++) {
         let buttonGroup = document.getElementById("miniButtons");
         let item = data[i];
-        buttonGroup.innerHTML += '<a href="'+item.url+'"><img src="'+item.buttonUrl+'" alt="'+item.id+'" title="'+item.name+'" /></a>';
+        buttonGroup.innerHTML += '<img src="'+item.buttonUrl+'" alt="'+item.id+'" title="'+item.name+'" onclick="openWebsite(\'' + item.url + '\', \'' + item.name + ' (' + item.url + ')\')" />';
         console.log(item);
     };
   })
