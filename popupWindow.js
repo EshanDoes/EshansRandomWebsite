@@ -104,7 +104,10 @@ function getSite(site, name=""){
     var windowSite = document.getElementById("windowSite");
     var windowName = document.getElementById("windowText");
 
-    windowSite.src = site;
+    windowSite.src = "";
+    setTimeout(function(){
+        windowSite.src = site;
+    }, 200);
     windowName.innerHTML = name;
 
 }
