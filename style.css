@@ -457,4 +457,7 @@ a{
     width: 176px;
     height: 62px;
   }
+  .miniButtons a{
+    height: 62px;
+  }
 }
