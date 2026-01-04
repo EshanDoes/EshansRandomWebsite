@@ -2,6 +2,7 @@
   border: 50px solid transparent;
   border-image: url("/windowResizeable.png") 25 25 25 round;
   background-color: #d4d0c8;
+  box-sizing: border-box;
 }
 
 .miniButtons img{
