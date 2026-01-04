@@ -3,19 +3,19 @@
 // Retrieved 2025-12-17, License - CC BY-SA 3.0
 
 var lastUpdate = Date.now();
-var dt = 0;
+var delta = 0;
 var milliseconds = 0;
 var myInterval = setInterval(tick, 0);
 
 function tick() {
     var now = Date.now();
-    dt += now - lastUpdate;
+    delta += now - lastUpdate;
     lastUpdate = now;
 
-    // update(dt);
-    // render(dt);
+    // update(delta);
+    // render(delta);
 
-    document.getElementById("imagesofmeinsuit").style.top = 25-(Math.sin(dt/500.0)*2.5) + "%";
-    console.log(dt);
+    document.getElementById("imagesofmeinsuit").style.top = 30-(Math.sin(delta/500.0)*2.5) + "%";
+    console.log(delta);
     console.log(document.getElementById("imagesofmeinsuit").style.top)
 }

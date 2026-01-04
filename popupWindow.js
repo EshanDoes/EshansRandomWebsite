@@ -1,7 +1,7 @@
-var lastUpdate = Date.now();
-var dt = 0;
-var now = 0;
-var myInterval;
+var popupLastUpdate = Date.now();
+var windowDelta = 0;
+var popupNow = 0;
+var popupInterval;
 var negative = false;
 var maxSize = 90;
 var pages = [
@@ -12,35 +12,35 @@ var pages = [
 ]
 
 function openBox(index, name = ""){
-    lastUpdate = Date.now();
-    dt = 0;
+    popupLastUpdate = Date.now();
+    windowDelta = 0;
     negative = false;
     getPage(index, name);
     document.getElementById("windowContent").style.visibility = "visible";
     document.getElementById("windowSite").style.visibility = "hidden";
     document.getElementById("windowGradient").style.visibility = "visible";
 
-    myInterval = setInterval(updateBox, 0)
+    requestAnimationFrame(updateBox);
 }
 
 function openWebsite(site, name=""){
-    lastUpdate = Date.now();
-    dt = 0;
+    popupLastUpdate = Date.now();
+    windowDelta = 0;
     negative = false;
+    getSite(site, name)
     document.getElementById("windowContent").style.visibility = "hidden";
     document.getElementById("windowSite").style.visibility = "visible";
     document.getElementById("windowGradient").style.visibility = "hidden";
-    getSite(site, name)
 
-    myInterval = setInterval(updateBox, 0)
+    requestAnimationFrame(updateBox);
 }
 
 function closeBox(){
-    lastUpdate = Date.now();
-    dt = 0;
+    popupLastUpdate = Date.now();
+    windowDelta = 0;
     negative = true;
 
-    myInterval = setInterval(updateBox, 0)
+    requestAnimationFrame(updateBox);
 }
 
 function updateBox(){
@@ -52,18 +52,18 @@ function updateBox(){
     window.style.visibility = "visible";
     windowBack.style.visibility = "visible";
 
-    if(dt < 500){
-        now = Date.now();
-        dt += now - lastUpdate;
-        lastUpdate = now;
+    if(windowDelta < 500){
+        popupNow = Date.now();
+        windowDelta += popupNow - popupLastUpdate;
+        popupLastUpdate = popupNow;
 
-        var progress = Math.sin(dt/500.0*Math.PI/2);
-        var opacityProgress = dt/250.0;
+        var progress = Math.sin(windowDelta/500.0*Math.PI/2);
+        var opacityProgress = windowDelta/250.0;
         if(negative){
             window.style.opacity = 2 - opacityProgress;
             windowBack.style.opacity = 1 - opacityProgress;
-            windowContent.style.opacity = 1 - dt/150.0;
-            windowSite.style.opacity = 1 - dt/150.0;
+            windowContent.style.opacity = 1 - windowDelta/150.0;
+            windowSite.style.opacity = 1 - windowDelta/150.0;
             windowName.style.opacity = 1 - opacityProgress;
             window.style.width = (maxSize - (maxSize * progress)) + "%";
             window.style.height = (maxSize - (maxSize * progress)) + "%";
@@ -77,12 +77,8 @@ function updateBox(){
             window.style.height = (maxSize * progress) + "%";
         }
 
-        console.log("Top: " + window.style.top);
-        console.log("Delta: " + dt);
-        console.log("Now: " + now);
-        console.log("Last Update: " + lastUpdate);
+        requestAnimationFrame(updateBox);
     } else{
-        clearInterval(myInterval);
         if(negative){
             window.style.visibility = "hidden";
             windowBack.style.visibility = "hidden";
