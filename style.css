@@ -47,18 +47,13 @@ p{
 }
 
 .initaltext {
-  color:aliceblue;
-  vertical-align:bottom;
-  position: relative;
-  transform: translate(0, 0);
-  top: 16px;
-  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 32px;
 }
 
 .maintext {
-  vertical-align:top;
-  position: top;
-  transform: translate(0%, 50px);
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 .smalltext {
@@ -69,11 +64,11 @@ p{
 .subtitle {
   position: relative;
   color: white;
-  top:10px;
-  transform: translate(0%, 50%);
   text-align: center;
   height: 100px;
   image-rendering: pixelated;
+  margin-top: 64px;
+  margin-bottom: 16px;
 }
 
 .subtitle h1{
@@ -104,7 +99,6 @@ p{
 h2{
   font-size: 40px;
   color: white;
-  text-align: center;
   text-shadow:
   -1px -1px 0 #000,
   1px -1px 0 #000,
@@ -151,12 +145,7 @@ pagering-link{
   vertical-align: middle;
   align-self: center;
   color: white;
-}
-
-#wavelength {
-  width: 60%;
-  transform: translate(0, 120px);
-  text-align: center;
+  font-size: 16px;
 }
 
 a{
@@ -338,6 +327,7 @@ a{
 #glitchCatTitle{
   font-family: DD;
   font-size: 112px;
+  margin: 0;
 }
 
 #windowBottomButton{
@@ -430,18 +420,14 @@ a{
     content: url("/main-images/Window_Header_Small.png");
     width: 500px;
   }
-  .subtitle{
-    transform: translate(0%, 150%);
-  }
-  .maintext{
-    transform: translate(0%, 45%);
-  }
-  #wavelength{
-    transform: translate(0, 240px)
-  }
   p{
     font-size: 32px;
-    transform: translate(0%, 60px);
+  }
+  .smalltext{
+    font-size: 20px;
+  }
+  pagering-link{
+    font-size: 20px;
   }
   .nav {
     height: 40px;
@@ -450,9 +436,6 @@ a{
   #buttonCredit{
     position: relative;
     top: 120px;
-  }
-  #windowText{
-    top: -100px;
   }
   #campfireButton{
     width: 10%;
