@@ -184,7 +184,7 @@ a{
 
 #imagesofmeinsuit{
   position: fixed;
-  top: 25%;
+  top: 30%;
 }
 
 #window{
@@ -201,6 +201,7 @@ a{
   border-image: url("/windowResizeable.png") 25 25 25 round;
   z-index: 6;
   opacity: 0;
+  visibility: hidden;
 }
 
 #windowContent{
