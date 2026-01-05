@@ -7,5 +7,9 @@
 
 .miniButtons img{
   position: relative;
-  top: 25px;
+  top: 14px;
+}
+
+pagering-link{
+  top: -38px;
 }

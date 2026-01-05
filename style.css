@@ -142,9 +142,12 @@ h2{
 
 pagering-link{
   position: relative;
-  vertical-align: middle;
-  align-self: center;
-  color: white;
+  font-size: 16px;
+  text-align: center;
+  margin-inline: auto;
+}
+
+.pagering{
   font-size: 16px;
 }
 
@@ -159,12 +162,19 @@ a{
 
 .miniButtons {
   position: relative;
-  top: 160px;
+  margin-top: 150px;
   height: fit-content;
   image-rendering: pixelated;
   margin-left: 10%;
   margin-right: 10%;
   pointer-events: all;
+  justify-self: space-around;
+}
+
+.miniButtons a{
+  color: transparent;
+  width: fit-content;
+  height: fit-content;
 }
 
 .miniButtons img{
@@ -178,8 +188,7 @@ a{
 }
 
 #buttoncredit {
-  position: relative;
-  top: 140px;
+  margin: 8px;
 }
 
 #imagesofmeinsuit{
@@ -284,8 +293,8 @@ a{
   background-image: url("/retroWindowsButtons/upbutton-focus.png");
 }
 
-#windowText{
-  position: fixed;
+.windowText{
+  position: absolute;
   text-align: left;
   font-size: 36px;
   top: -40px;
@@ -329,24 +338,29 @@ a{
   font-family: DD;
   font-size: 112px;
   margin: 0;
+  text-shadow:
+  -3px -3px 0 #000,
+  3px -3px 0 #000,
+  -3px 3px 0 #000,
+  3px 3px 0 #000; 
 }
 
 #windowBottomButton{
   position: relative;
   top: 5%;
+  margin-bottom: 100px;
 }
 
 .inspirationList{
   position: relative;
-  top: 150px;
+  margin-top: 150px;
   overflow: visible;
   justify-content: space-around;
   justify-items: space-around;
   justify-self: space-around;
   background-color: #d4d0c8;
   width: 80%;
-  left: 50%;
-  transform: translate(-50%, 0%);
+  margin-inline: auto;
   height: 30%;
   right: 0%;
   border: 50px solid transparent;
@@ -427,7 +441,7 @@ a{
   .smalltext{
     font-size: 20px;
   }
-  pagering-link{
+  .pagering{
     font-size: 20px;
   }
   .nav {
@@ -451,5 +465,9 @@ a{
   }
   .miniButtons a{
     height: 62px;
+  }
+  #undertaleYellowLogo{
+    width: 405px;
+    height: 92px;
   }
 }
