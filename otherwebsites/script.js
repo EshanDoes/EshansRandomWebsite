@@ -20,7 +20,7 @@ fetch(apiUrl, requestOptions)
     console.log(data);
 
     for(let i = 0; i < data.length; i++) {
-        let buttonGroup = document.getElementById("miniButtons");
+        let buttonGroup = document.getElementById("hackclubButtons");
         let item = data[i];
         buttonGroup.innerHTML += '<img src="'+item.buttonUrl+'" alt="'+item.id+'" title="'+item.name+'" onclick="openWebsite(\'' + item.url + '\', \'' + item.name + ' (' + item.url + ')\')" />';
         console.log(item);
