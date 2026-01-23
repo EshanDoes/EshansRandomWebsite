@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 
 <head>
+    <script src="https://pagering.gideon.sh/embed.js" defer></script>
     <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="/otherwebsites/style.css">
-    <script src="/otherwebsites/script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 
     <title>Eshan's Random Site</title>
     <link rel="icon" href="/siteicon.png">
+</head>
 
-    <div class="nav">
+<body>
+    <!-- Place page-wide content here -->
+    <nav class="nav">
         <a href="/">Home</a>
         <a href="/inspirations">Inspirations</a>
-        <a class="active" href="/otherwebsites">Other Websites</a>
-    </div>
+        <a class="active" href="/webrings">Webrings</a>
+    </nav>
 
     <div id="windowBack" onclick="closeBox()"></div>
     <div id="window">
-        <img onclick="closeBox()" id="closeButton" src="/retroWindowsButtons/Xbutton.png"></button>
+        <img onclick="closeBox()" id="closeButton" alt="Close Button" src="/retroWindowsButtons/Xbutton.png">
         <p class="windowText" id="windowText"></p>
         <div id="windowGradient"></div>
         <div id="windowContent" class="windowContent">
@@ -29,13 +33,13 @@
     <div id="readabilityGradient"></div>
 
     <img src="/campfire-icon.svg" id="campfireButton" onclick="openWebsite('https://campfire.hackclub.com/', 'Hack Club Campfire')" title="Check out Campfire! (campfire.hackclub.com)">
-</head>
+    <!-- Page-wide content ends here -->
 
-<script src="https://pagering.gideon.sh/embed.js" defer></script>
+    <p class="initaltext">This is a collection of all the sites in the Hack Club Webring and Page Ring! If I ever join any other webrings or enough of my friends make websites, I'll add them here as well.</p>
 
-<body>
-    <p class="initaltext">This is a collection of all the sites in the Page Ring associated with Hack Club, a nonprofit dedicated to helping teens find their passion in tech! If I ever join any other pagerings or enough of my friends make websites, I'll add them here as well.</p>
-
-    <div class="miniButtons" id="hackclubButtons"><p class="windowText">Hack Club Pagering</p></div>
+    <div class="miniButtons" id="pageringButtons"><p class="windowText">Hack Club Page Ring</p></div>
     <pagering-link theme="light" class="pagering"></pagering-link>
+
+    <div class="miniButtons" id="hackClubButtons"><p class="windowText">Hack Club Webring</p></div>
+    <iframe style="border:none;" src="https://webring.hackclub.com/embed.html" width="100px" height="60px" id="hackClubWebring"></iframe>
 </body>
