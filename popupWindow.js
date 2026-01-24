@@ -23,7 +23,7 @@ function openBox(index, name = ""){
     requestAnimationFrame(updateBox);
 }
 
-function openWebsite(site, name=""){
+function openWebsite(site, name=site){
     popupLastUpdate = Date.now();
     windowDelta = 0;
     negative = false;

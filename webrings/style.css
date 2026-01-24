@@ -1,0 +1,59 @@
+.miniButtons{
+  border: 50px solid transparent;
+  border-image: url("/windowResizeable.png") 25 25 25 round;
+  background-color: #d4d0c8;
+  box-sizing: border-box;
+  margin-top: 70px;
+  display:table;
+}
+
+.miniButtons img{
+  position: relative;
+  top: 12px;
+}
+
+.miniButtons a{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  position: relative;
+  top: 4px;
+  color: #404040;
+  background-color: #d4d0c8;
+  min-width: 88px;
+  height: 31px;
+  min-height: 31px;
+  max-height: 31px;
+  line-height: 32px;
+  margin: 1px;
+  border: 4px solid transparent;
+  border-image: url("/container-c.png") 2 2 2 round;
+  text-decoration: none;
+  padding-left: 3px;
+  padding-right: 3px;
+  font-size: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.miniButtons a:hover {
+  border-image: url("/container.png") 2 2 2 round;
+}
+
+pagering-link{
+  top: -38px;
+}
+
+#hackClubWebring{
+  position: relative;
+  top: -43px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .miniButtons a{
+    font-size: 32px;
+    min-width: 136px;
+    height: 40px;
+    min-height: 40px;
+    max-height: 40px;
+    margin: 2px;
+  }
+}

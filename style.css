@@ -167,6 +167,7 @@ a{
   image-rendering: pixelated;
   margin-left: 10%;
   margin-right: 10%;
+  width: 80%;
   pointer-events: all;
   justify-self: space-around;
 }
