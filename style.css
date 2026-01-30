@@ -140,6 +140,13 @@ h2{
   color: white;
 }
 
+#Toronto_z18a{
+  position: absolute;
+  transform: translate(0, -50%);
+  top: 50%;
+  right: 0%;
+}
+
 pagering-link{
   position: relative;
   font-size: 16px;

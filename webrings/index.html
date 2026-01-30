@@ -2,9 +2,15 @@
 
 <head>
     <script src="https://pagering.gideon.sh/embed.js" defer></script>
+
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+
+    <script src="//widget.time.is/en.js"></script>
+    <script>
+if(screen.width > 1000){time_is_widget.init({Toronto_z18a:{template:"Time: TIME ― DATE", time_format:"12hours:minutesAMPM", date_format:"monthname dnum, year"}});}else{time_is_widget.init({Toronto_z18a:{template:"Time: TIME", time_format:"12hours:minutesAMPM"}});};
+    </script>
 
     <title>Eshan's Random Site</title>
     <link rel="icon" href="/siteicon.png">
@@ -16,6 +22,7 @@
         <a href="/">Home</a>
         <a href="/inspirations">Inspirations</a>
         <a class="active" href="/webrings">Webrings</a>
+        <a href="https://time.is/Toronto" id="Toronto_z18a" rel="nofollow"></a>
     </nav>
 
     <div id="windowBack" onclick="closeBox()"></div>
@@ -32,7 +39,7 @@
 
     <div id="readabilityGradient"></div>
 
-    <img src="/campfire-icon.svg" id="campfireButton" onclick="openWebsite('https://campfire.hackclub.com/', 'Hack Club Campfire')" title="Check out Campfire! (campfire.hackclub.com)">
+    <img src="/campfire-icon.svg" id="campfireButton" onclick="openWebsite('https://campfire.hack.club/304', 'Hack Club Campfire')" title="Sign up for Campfire! (campfire.hackclub.com)">
     <!-- Page-wide content ends here -->
 
     <p class="initaltext">This is a collection of all the sites in the Hack Club Webring and Page Ring! If I ever join any other webrings or enough of my friends make websites, I'll add them here as well.</p>
