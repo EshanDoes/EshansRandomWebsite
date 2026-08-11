@@ -1,6 +1,6 @@
 .miniButtons{
   border: 50px solid transparent;
-  border-image: url("/windowResizeable.png") 25 25 25 round;
+  border-image: url("/assets/images/windows/other/windowResizeable.png") 25 25 25 round;
   background-color: #d4d0c8;
   box-sizing: border-box;
   margin-top: 70px;
@@ -25,7 +25,7 @@
   line-height: 32px;
   margin: 1px;
   border: 4px solid transparent;
-  border-image: url("/container-c.png") 2 2 2 round;
+  border-image: url("/assets/images/windows/containers/c.png") 2 2 2 round;
   text-decoration: none;
   padding-left: 3px;
   padding-right: 3px;
@@ -35,7 +35,7 @@
 }
 
 .miniButtons a:hover {
-  border-image: url("/container.png") 2 2 2 round;
+  border-image: url("/assets/images/windows/containers/a.png") 2 2 2 round;
 }
 
 pagering-link{

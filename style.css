@@ -1,25 +1,26 @@
 @font-face {
   font-family: DD;
-  src: url('/DigitalDisco.ttf');
+  src: url('/assets/fonts/DigitalDisco.ttf');
 }
 
 @font-face{
   font-family: DD-thin;
-  src: url('/DigitalDisco-Thin.ttf');
+  src: url('/assets/fonts/DigitalDisco-Thin.ttf');
 }
 
 @font-face{
   font-family: retroWindows;
-  src: url("/M_8pt.ttf");
+  src: url("/assets/fonts/M_8pt.ttf");
 }
 
 body {
-  background-image: url('/background.jpg');
+  background-image: url('/assets/images/background.jpg');
   background-size: 50%;
   background-position: center;
   background-attachment: fixed;
   background-color: black;
   text-align: center;
+  padding: 0%, 12.5%;
 }
 
 #readabilityGradient {
@@ -64,11 +65,19 @@ p{
 .subtitle {
   position: relative;
   color: white;
+  background-color: #d4d0c8;
   text-align: center;
-  height: 100px;
+  height: 150px;
+  width: 75%;
   image-rendering: pixelated;
   margin-top: 64px;
   margin-bottom: 16px;
+  align-self: center;
+  place-self: center;
+  justify-self: center;
+  border: 50px solid transparent;
+  border-image: url("/assets/images/windows/other/windowResizeable.png") 25 25 25 round;
+  box-sizing: border-box;
 }
 
 .subtitle h1{
@@ -79,21 +88,12 @@ p{
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -95%);
+  transform: translate(-50%, -80%);
   text-rendering: pixelated;
   image-rendering: pixelated;
   text-align: center;
   overflow: hidden;
-}
-
-.subtitle img{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width:1000px;
-  content: src("/main-images/Window_Header.png");
-  image-rendering: pixelated;
-  text-align: center;
+  white-space: pre;
 }
 
 h2{
@@ -140,6 +140,13 @@ h2{
   color: white;
 }
 
+#Toronto_z18a{
+  position: absolute;
+  transform: translate(0, -50%);
+  top: 50%;
+  right: 0%;
+}
+
 pagering-link{
   position: relative;
   font-size: 16px;
@@ -156,7 +163,7 @@ a{
 }
 
 .meinsuit {
-  width: 120px;
+  width: 115px;
   position: fixed;
 }
 
@@ -208,7 +215,7 @@ a{
   height: 0%;
   transform: translate(-50%, -50%);
   border: 50px solid transparent;
-  border-image: url("/windowResizeable.png") 25 25 25 round;
+  border-image: url("/assets/images/windows/other/windowResizeable.png") 25 25 25 round;
   z-index: 6;
   opacity: 0;
   visibility: hidden;
@@ -256,7 +263,7 @@ a{
   position: absolute;
   height: 100%;
   width: 36px;
-  background-image: url("/dithering.png");
+  background-image: url("/assets/images/windows/other/dithering.png");
   image-rendering: pixelated;
   background-repeat: repeat-y;
   background-size: 200%;
@@ -265,11 +272,11 @@ a{
 .windowContent::-webkit-scrollbar-thumb {
   background-color: #d4d0c8;
   border: 12px solid transparent;
-  border-image: url("/retroWindowsButtons/button.png") 3 3 3 round;
+  border-image: url("/assets/images/windows/buttons/blank.png") 3 3 3 round;
 }
 
 .windowContent::-webkit-scrollbar-thumb:hover {
-  border-image: url("/retroWindowsButtons/button-focus.png") 3 3 3 round;
+  border-image: url("/assets/images/windows/buttons/focus/blank.png") 3 3 3 round;
 }
 
 .windowContent::-webkit-scrollbar-button{
@@ -279,19 +286,19 @@ a{
 }
 
 .windowContent::-webkit-scrollbar-button:increment{
-  background-image: url("/retroWindowsButtons/downbutton.png");
+  background-image: url("/assets/images/windows/buttons/down.png");
 }
 
 .windowContent::-webkit-scrollbar-button:decrement{
-  background-image: url("/retroWindowsButtons/upbutton.png");
+  background-image: url("/assets/images/windows/buttons/up.png");
 }
 
 .windowContent::-webkit-scrollbar-button:increment:hover{
-  background-image: url("/retroWindowsButtons/downbutton-focus.png");
+  background-image: url("/assets/images/windows/buttons/focus/down.png");
 }
 
 .windowContent::-webkit-scrollbar-button:decrement:hover{
-  background-image: url("/retroWindowsButtons/upbutton-focus.png");
+  background-image: url("/assets/images/windows/buttons/focus/up.png");
 }
 
 .windowText{
@@ -311,13 +318,13 @@ a{
   height: 36px;
   top: -40px;
   right: -40px;
-  content: url("/retroWindowsButtons/Xbutton.png");
+  content: url("/assets/images/windows/buttons/x.png");
   image-rendering: pixelated;
   border: 0px black;
 }
 
 #closeButton:hover{
-  content: url("/retroWindowsButtons/Xbutton-focus.png");
+  content: url("/assets/images/windows/buttons/focus/x.png");
   cursor: pointer;
 }
 
@@ -360,12 +367,12 @@ a{
   justify-items: space-around;
   justify-self: space-around;
   background-color: #d4d0c8;
-  width: 80%;
+  width: 75%;
   margin-inline: auto;
   height: 30%;
   right: 0%;
   border: 50px solid transparent;
-  border-image: url("/windowResizeable.png") 25 25 25 round;
+  border-image: url("/assets/images/windows/other/windowResizeable.png") 25 25 25 round;
 }
 
 .inspirations img{
@@ -375,26 +382,12 @@ a{
   justify-items: space-around;
   justify-self: space-around;
   border: 8px solid transparent;
-  border-image: url("/container-c.png") 2 2 2 round;
+  border-image: url("/assets/images/windows/containers/c.png") 2 2 2 round;
   image-rendering: pixelated;
 }
 
 .inspirations img:hover{
-  border-image: url("/container.png") 2 2 2 round;
-  cursor: pointer;
-}
-
-#searchButton{
-  position: relative;
-  image-rendering: pixelated;
-  width: 20%;
-  height: auto;
-  top: 100px;
-  content: url("/retroWindowsButtons/searchbutton.png");
-}
-
-#searchButton:hover{
-  content: url("/retroWindowsButtons/searchbutton-focus.png");
+  border-image: url("/assets/images/windows/containers/a.png") 2 2 2 round;
   cursor: pointer;
 }
 
@@ -403,39 +396,7 @@ a{
   top: 25px;
 }
 
-#campfireButton{
-  position: fixed;
-  bottom: 1%;
-  right: 1%;
-  width: 7%;
-  height: auto;
-  transition: 0.2s ease-out;
-  filter:
-  drop-shadow(0 0 0 #ffffff00) 
-  drop-shadow(0 0 0 #ffffff00)
-  drop-shadow(0 0 0 #ffffff00) 
-  drop-shadow(0 0 0 #ffffff00);
-  z-index: 2;
-}
-
-#campfireButton:hover{
-  width: 8%;
-  border-width: 4px;
-  bottom: 2%;
-  right: 2%;
-  filter:
-  drop-shadow(3px 0 0 white) 
-  drop-shadow(0 3px 0 white)
-  drop-shadow(-3px 0 0 white) 
-  drop-shadow(0 -3px 0 white);
-  cursor: pointer;
-}
-
 @media only screen and (max-width: 1000px) {
-  .subtitle img{
-    content: url("/main-images/Window_Header_Small.png");
-    width: 500px;
-  }
   p{
     font-size: 32px;
   }
@@ -449,15 +410,12 @@ a{
     height: 40px;
     font-size: 32px;
   }
+  .nav a {
+    font-size: 32px;
+  }
   #buttonCredit{
     position: relative;
     top: 120px;
-  }
-  #campfireButton{
-    width: 10%;
-  }
-  #campfireButton:hover{
-    width: 12%;
   }
   .miniButtons img{
     width: 176px;

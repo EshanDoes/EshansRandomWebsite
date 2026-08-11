@@ -2,10 +2,12 @@
 
 <head>
     <link rel="stylesheet" href="/style.css">
-    <script src="/script.js"></script>
+    <script src="script.js"></script>
+
+    <script src="//widget.time.is/en.js"></script>
 
     <title>Eshan's Random Site</title>
-    <link rel="icon" href="/siteicon.png">
+    <link rel="icon" href="/assets/images/siteicon.png">
 </head>
 
 <body id="body">
@@ -14,43 +16,29 @@
         <a class="active" href="/">Home</a>
         <a href="/inspirations">Inspirations</a>
         <a href="/webrings">Webrings</a>
+        <a href="https://time.is/Toronto" id="Toronto_z18a" rel="nofollow"></a>
     </nav>
-
-    <div id="windowBack" onclick="closeBox()"></div>
-    <div id="window">
-        <img onclick="closeBox()" id="closeButton" alt="Close Button" src="/retroWindowsButtons/Xbutton.png">
-        <p class="windowText" id="windowText"></p>
-        <div id="windowGradient"></div>
-        <div id="windowContent" class="windowContent">
-            <p>Looks like something went wrong! Be sure to contact Eshan about it.</p>
-        </div>
-        <iframe id="windowSite" class="windowContent" frameboarder=0 src=""></iframe>
-    </div>
-    <script src="/popupWindow.js"></script>
-
-    <img src="/campfire-icon.svg" id="campfireButton" onclick="openWebsite('https://campfire.hackclub.com/', 'Hack Club Campfire')" title="Check out Campfire! (campfire.hackclub.com)">
+    <script src="/global.js"></script>
 
     <div id="readabilityGradient"></div>
     <!-- Page-wide content ends here -->
 
     <div id="imagesofmeinsuit">
-        <img src="/meinsuit.png" class="meinsuit" style="left: 1%;">
-        <img src="/meinsuit.png" class="meinsuit" style="right: 1%;">
+        <img src="/assets/images/meinsuit.png" class="meinsuit" style="left: 1%;">
+        <img src="/assets/images/meinsuit.png" class="meinsuit" style="right: 1%;">
     </div>
 
     <h2 class="initaltext">Welcome!</h1>
     <p class="initaltext">Hello, and welcome to my website! This is just a place where I talk about myself, and maybe show what I'm up to. Speaking of which, why don't I introduce myself?</p>
 
     <div class="subtitle">
-        <nav><img src="/main-images/Window_Header.png"></nav>
         <h1>WHO AM I?</h1>
     </div>
 
-    <p class="maintext">My name is Eshan, although online I'm known as Eshan Does, and I'm a 14 year old who's managed to do a lot. From moderating Discord servers, to coding this very website, I usually like to try a lot of different things and see what I like, what I'm good at, and what doesn't fit either of those.</p>
+    <p class="maintext">My name is Eshan, although online I'm known as Eshan Does, and I'm a 15 year old who's managed to do a lot. From moderating Discord servers, to coding this very website, I usually like to try a lot of different things and see what I like, what I'm good at, and what doesn't fit either of those.</p>
     <p class="maintext">I like playing video games, as well as coding in general, and I'm also pretty good at pixel art. I do also have a slight bit of experience in music as well, but don't expect me to make anything good on the spot. There's a lot of other stuff I do sometimes, but that's the main skills I've got. Speaking of my skills, though...</p>
 
     <div class="subtitle">
-        <nav><img src="/main-images/Window_Header.png"></nav>
         <h1>CODING</h1>
     </div>
 
@@ -58,14 +46,12 @@
     <iframe frameborder="0" src="https://itch.io/embed/4079045?linkback=true&amp;border_width=3&amp;bg_color=bbbbbb&amp;fg_color=000000&amp;link_color=eeeeee&amp;border_color=6c6c6c" width="60%" height="171"><a href="https://eshan-does.itch.io/arbbgmbagnewhahljtitmisbdrhmeti">ARBBGMBAGNEWHAHLJTITMISBDRHMETI by Eshan Does</a></iframe>
 
     <div class="subtitle">
-        <nav><img src="/main-images/Window_Header.png"></nav>
         <h1>PIXEL ART</h1>
     </div>
 
-    <p class="maintext">As you can probably tell, I'm a pretty big fan of pixel art. The subtitles themselves are put inside a Windows 98 window! I've been making pixel art for quite a while, and even though my portfolio isn't big, I've still made a decent selection of pixel art. If you want examples of what I've made, I have uploaded a bit of pixel art into my <a href="https://artfight.net/~EshanDoes">Art Fight</a> profile when it happened during the summer. Feel free to follow if you'll be participating for 2026!</p>
+    <p class="maintext">As you can probably tell, I'm a pretty big fan of pixel art. The subtitles themselves are put inside a Windows 98 window! I've been making pixel art for quite a while, and even though my portfolio isn't big, I've still made a decent selection of pixel art. If you want examples of what I've made, I  uploaded a bit of pixel art onto my <a href="https://artfight.net/~EshanDoes">Art Fight</a> profile back in 2025. I was too busy to do anything in 2026, but feel free to follow if you'll be joining for 2027!</p>
 
     <div class="subtitle">
-        <nav><img src="/main-images/Window_Header.png"></nav>
         <h1>MUSIC</h1>
     </div>
 
@@ -73,18 +59,17 @@
 
     <div class="miniButtons" id="miniButtons">
         <a href="https://www.youtube.com/@eshandoes">
-            <img src="/88x31buttons/youtube.png" alt="YouTube" title="YouTube Channel" />
+            <img src="/assets/images/88x31buttons/youtube.png" alt="YouTube" title="YouTube Channel" />
         </a>
         <a href="https://discord.gg/2PSRTPUyTG">
-            <img src="/88x31buttons/discord.png" alt="Discord" title="Discord Server" />
+            <img src="/assets/images/88x31buttons/discord.png" alt="Discord" title="Discord Server" />
         </a>
         <a href="https://bsky.app/profile/eshandoes.bsky.social">
-            <img src="/88x31buttons/bluesky.png" alt="BlueSky" title="BlueSky Account (inactive)" />
+            <img src="/assets/images/88x31buttons/bluesky.png" alt="BlueSky" title="BlueSky Account (semi-inactive)" />
         </a>
         <a onclick="openWebsite('/index.html', 'Eshan\'s Random Site')">
-            <img src="/88x31buttons/personal.png" alt="Personal Site" title="Visit my website on my website!" />
+            <img src="/assets/images/88x31buttons/personal.png" alt="Personal Site" title="Visit my website on my website!" />
         </a>
     </div>
-    <p class="smalltext" id="buttoncredit">88x31 button code by <a href="https://bomberfish.ca/" class="smalltext">Bomberfish</a>.</p>
     <pagering-link theme="dark" class="pagering"></pagering-link>
 </body>
