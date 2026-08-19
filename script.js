@@ -16,6 +16,4 @@ function tick() {
     // render(delta);
 
     document.getElementById("imagesofmeinsuit").style.top = 30-(Math.sin(delta/500.0)*2.5) + "%";
-    console.log(delta);
-    console.log(document.getElementById("imagesofmeinsuit").style.top)
 }
